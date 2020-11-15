@@ -15,6 +15,7 @@ public class Menu {
 		donneNomAuTama();
 		donneCouleurAuTama();
 		donneCouleurCheveuxAuTama();
+		
 	}
 
 	/*

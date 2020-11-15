@@ -36,6 +36,7 @@ public class Tamagotchi {
 	 * @return the couleur
 	 */
 	public String getCouleur() {
+		
 		return couleur;
 	}
 
@@ -65,6 +66,7 @@ public class Tamagotchi {
 	}
 
 	public String getCouleurCheveux() {
+		
 		return couleurCheveux;
 	}
 
@@ -142,6 +144,7 @@ public class Tamagotchi {
 	 * @return the compteurFaim
 	 */
 	public int getCompteurFaim() {
+		
 		return compteurFaim;
 	}
 
@@ -168,6 +171,7 @@ public class Tamagotchi {
 	}
 
 	public void manger() {
+		
 		this.compteurFaim++;
 
 	}
@@ -176,6 +180,7 @@ public class Tamagotchi {
 	 * @return the vie
 	 */
 	public int getVie() {
+		
 		return vie;
 	}
 
@@ -202,20 +207,24 @@ public class Tamagotchi {
 	}
 
 	public void reproduire() {
+		
 		this.compteurFaim--;
 		this.vie++;
 	}
 
 	public void wc() {
+		
 		this.vie++;
 	}
 
 	public void roux() {
+		
 		this.couleurCheveux = "Roux";
 		System.out.println(Main.myTama.toString());
 	}
 
 	public void repos() {
+		
 		this.vie++;
 		this.compteurFaim--;
 	}
@@ -232,20 +241,24 @@ public class Tamagotchi {
 	}
 	
 	public void amis() {
+		
 		System.out.println("Votre " + type + " voit ses amis " + type);
 	}
 	
 	public void sport() {
+		
 		this.vie++;
 		this.compteurFaim = compteurFaim-2;
 	}
 	
 	public void seLaver() {
+		
 		this.vie++;
 	}
 	
 	@Override
 	public String toString() {
+		
 		return "Votre " + type + " " + couleur + " aux cheveux " + couleurCheveux + " s'appelle " + nom;
 	}
 
